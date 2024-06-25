@@ -8,13 +8,13 @@ function styles() {
         .pipe(gulp.dest('./dist/css'));
 }
 
-function images() {
+function imagens() {
     return gulp.src('./src/images/**/*')
         .pipe(imagemin())
-        .pipe(gulp.dest('./dist/images'));
+        .pipe(gulp.dest('./dist/imagens'));
 }
 
-exports.default = gulp.parallel(styles, images);
+exports.default = gulp.parallel(styles, imagens);
 
 
 exports.watch = function() {
